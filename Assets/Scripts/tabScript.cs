@@ -18,13 +18,13 @@ public class tabScript : MonoBehaviour {
 	void Update () {
         if (outside)
         {
-            Vector3 targetPos = (new Vector3(43f, 7f, -99f));
+            Vector3 targetPos = (new Vector3(-41f, 7f, -99f));
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
         }
 
         if (inside)
         {
-            Vector3 targetPos = (new Vector3(251.5f, 7f, -99f));
+            Vector3 targetPos = (new Vector3(167.5f, 7f, -99f));
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
         }
     }
