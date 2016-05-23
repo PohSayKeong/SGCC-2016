@@ -9,4 +9,9 @@ public class screenSwitch : MonoBehaviour {
 
         SceneManager.LoadScene("Main");
     }
+
+    public void endGame()
+    {
+        SceneManager.LoadScene("Newspaper");
+    }
 }

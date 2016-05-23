@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class timerScript : MonoBehaviour {
-    public float timeLeft;
+    public float timeLeft = 60;
     public Text timeText;
 
 	// Use this for initialization
@@ -18,4 +18,9 @@ public class timerScript : MonoBehaviour {
         timeText.text = "Time Left: " + timeLeft.ToString();
 	
 	}
+
+    public void resetTime()
+    {
+        timeLeft = 60;
+    }
 }

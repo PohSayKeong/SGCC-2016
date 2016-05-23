@@ -61,7 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\acceptScript.cs" />
+    <Compile Include="Assets\Scripts\bikeScript.cs" />
+    <Compile Include="Assets\Scripts\brushScript.cs" />
+    <Compile Include="Assets\Scripts\chargerScript.cs" />
     <Compile Include="Assets\Scripts\gameStart.cs" />
+    <Compile Include="Assets\Scripts\rejectScript.cs" />
     <Compile Include="Assets\Scripts\rotateScript.cs" />
     <Compile Include="Assets\Scripts\screenSwitch.cs" />
     <Compile Include="Assets\Scripts\tabScript.cs" />
