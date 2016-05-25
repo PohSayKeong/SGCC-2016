@@ -40,6 +40,7 @@ public class chargerScript : MonoBehaviour {
     public void chargerLive()
     {
         movingInPlace = true;
+        gameObject.AddComponent<rotateScript>();
     }
 
     public void chargerDie()
