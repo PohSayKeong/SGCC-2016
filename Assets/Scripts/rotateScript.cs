@@ -3,11 +3,11 @@ using System.Collections;
 
 public class rotateScript : MonoBehaviour
 {
-    public int speed;
-    public float friction;
-    public float lerpSpeed;
+    public int speed = 10;
+    public float friction = 1;
+    public float lerpSpeed = 10;
     private float xDeg;
-    private float yDeg;
+    private float yDeg = 270;
     private Quaternion fromRotation;
     private Quaternion toRotation;
 

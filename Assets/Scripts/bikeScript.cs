@@ -38,6 +38,7 @@ public class bikeScript : MonoBehaviour {
 
     public void bikeLive(){
         movingInPlace = true;
+        gameObject.AddComponent<rotateScript>();
     }
 
     public void bikeDie()
