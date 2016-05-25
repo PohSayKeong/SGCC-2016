@@ -30,6 +30,7 @@ public class bikeScript : MonoBehaviour {
             if (transform.position.x > 220f)
             {
                 transform.localScale = new Vector3(0.1f, 0f, 0f);
+                bikeInPlay = false;
             }
         }
 

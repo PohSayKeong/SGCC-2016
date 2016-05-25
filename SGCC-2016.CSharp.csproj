@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\bikeScript.cs" />
     <Compile Include="Assets\Scripts\brushScript.cs" />
     <Compile Include="Assets\Scripts\chargerScript.cs" />
+    <Compile Include="Assets\Scripts\checkListScript.cs" />
     <Compile Include="Assets\Scripts\gameStart.cs" />
     <Compile Include="Assets\Scripts\rejectScript.cs" />
     <Compile Include="Assets\Scripts\rotateScript.cs" />

@@ -10,11 +10,16 @@ public class gameStart : MonoBehaviour {
     // Use this for initialization
     void Start () {
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        Vector3 targetPos = (new Vector3(12.7f,-1.1f,-191.1f ));
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 targetPos = (new Vector3(12.7f, -1.1f, -191.1f));
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
         brushInPlay = true;
-}
+        if (transform.position.x > 230f)
+        {
+            brushInPlay = false;
+        }
+    }
 }

@@ -6,7 +6,7 @@ public class brushScript : MonoBehaviour {
     public Transform target;
     private Vector3 velocity = Vector3.zero;
     public float smoothTime;
-    private bool movingInPlace = false;
+    private bool movingOut = false;
 
     // Use this for initialization
     void Start () {
@@ -16,7 +16,7 @@ public class brushScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (movingInPlace)
+        if (movingOut)
         {
             Vector3 targetPos = (new Vector3(300f, -1.1f, -191.1f));
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
@@ -29,6 +29,6 @@ public class brushScript : MonoBehaviour {
 
     public void brushDie()
     {
-        movingInPlace = true;
+        movingOut = true;
     }
 }
